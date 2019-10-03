@@ -39,6 +39,20 @@
     </footer>
 
   </div>
+<script>
+    $.get('/api/survey').then(function(data){
+        console.log('data, survey', data);
+        // 
+        
+    })
+    $.get('/api/friends').then(function(data){
+        console.log('data, friends', data);
+        for (var i = 0; i < data.length; i++){
+            // loop over and create a score to spit out best match
+        }
+    })
+</script>
+
 
 
 </body>
