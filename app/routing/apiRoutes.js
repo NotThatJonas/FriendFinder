@@ -56,7 +56,6 @@ router.post('/friends', function (req, res){
        
           
       }
-      console.log('tet', bestMatch);
       
 
       friendsData.push(newFriend);
