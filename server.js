@@ -5,10 +5,10 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
-var htmlRoutes = require('./routing/htmlRoutes')
+var htmlRoutes = require('./app/routing/htmlRoutes')
 app.use(htmlRoutes)
 
-var apiRoutes = require('./routing/apiRoutes')
+var apiRoutes = require('./app/routing/apiRoutes')
 app.use('/api', apiRoutes)
 
 //listen setiu for a request

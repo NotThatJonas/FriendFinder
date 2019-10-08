@@ -23,7 +23,7 @@ router.post('/friends', function (req, res){
         scores: []
       };
       
-    
+      
     console.log('friends', friendsData);
     var bestMatch = {
         name: "",
@@ -33,7 +33,6 @@ router.post('/friends', function (req, res){
     var totalDifference;
 
       for (let i = 0; i < friendsData.length - 1; i++) {
-        var possibleMatches = friendsData;
         totalDifference = 0;
         var currentFriend = friendsData[i];
         var absoluteDifference = [];
@@ -58,7 +57,7 @@ router.post('/friends', function (req, res){
       }
       
 
-      friendsData.push(newFriend);
+    friendsData.push(newFriend);
   
 })
 
